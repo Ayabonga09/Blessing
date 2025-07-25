@@ -1,0 +1,151 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+}
+
+/* LOGIN PAGE STYLE */
+.login-body {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-box h1 {
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+input[type="password"] {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ff69b4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* BIRTHDAY PAGE STYLE */
+.birthday-body {
+  background: linear-gradient(to right, #ffe0f0, #e0f7ff);
+  padding: 50px 20px;
+  height: 100vh;
+}
+
+.surprise-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.surprise-box h1 {
+  color: #ff1493;
+  margin-bottom: 20px;
+}
+
+.surprise-box p {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cake-img {
+  width: 200px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.cake-img {
+  width: 220px; /* increase if needed */
+  border-radius: 20px; /* optional: soften the edges */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: bounce 2s infinite;
+  border-radius: 50%;
+}
+.reaction-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reaction-buttons button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reaction-buttons button:hover {
+  background-color: #ff8fab;
+}
+
+.emoji-pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+}
+
