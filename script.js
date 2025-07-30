@@ -1,7 +1,7 @@
 function checkPassword() {
   const input = document.getElementById("password").value;
   const errorBox = document.getElementById("error");
-  const secret = "26/07/2002"; // 🔐 Set your secret password
+  const secret = "26/07/2002"; 
 
   if (input.toLowerCase() === secret) {
     window.location.href = "birthday.html";
