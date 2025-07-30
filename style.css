@@ -1,4 +1,3 @@
-/* General reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,6 @@ body {
   text-align: center;
 }
 
-/* LOGIN PAGE STYLE */
 .login-body {
   background-image: url("images/background.jpg");
   background-size: cover;
@@ -65,7 +63,6 @@ button:hover {
   font-size: 14px;
 }
 
-/* BIRTHDAY PAGE STYLE */
 .birthday-body {
   background: linear-gradient(to right, #ffe0f0, #e0f7ff);
   padding: 50px 20px;
